@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,6 +10,34 @@
     <script data-main="app/application" src="app/lib/require/require.js"></script>
 </head>
 <body>
-    dfnvldnfvndfvndklnv
+    <div class="application" id="modal_wrap" style="display:none">
+        <div class="modal-wrapper">
+            <div class="create_table reveal-modal" style="visibility:visible;top:20%;">
+                <div>Введите название дела:</div>
+                <input type="text" value="">
+                <div>Нажмите Enter чтобы добавить его в список или нажмите крестик для выхода</div>
+                <a class="close close-reveal-modal">×</a>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+
+        <header id="header"></header><!-- #header-->
+
+        <div id="content">
+            <div id="calendar"></div>
+            <div id="task_list">
+                <div style="margin-left: 131px;">Список дел:</div>
+                    </br>
+                    <ul id='list'>
+                    </ul>
+
+                    <div id="add_task">Добавить дело</div>
+            </div>
+        </div><!-- #content-->
+
+    </div><!-- #wrapper -->
+
+    <footer id="footer"></footer><!-- #footer -->
 </body>
 </html>
